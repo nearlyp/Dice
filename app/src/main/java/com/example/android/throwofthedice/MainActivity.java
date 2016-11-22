@@ -97,6 +97,6 @@ public class MainActivity extends AppCompatActivity {
      */
     public void rollResult(int score) {
         TextView scoreView = (TextView) findViewById(R.id.rollResult);
-        scoreView.setText(String.valueOf(score + " !"));
+        scoreView.setText(String.valueOf(score));
     }
 }
