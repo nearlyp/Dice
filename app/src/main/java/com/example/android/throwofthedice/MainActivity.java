@@ -1,4 +1,4 @@
-package com.example.android.athrowofthedice;
+package com.example.android.throwofthedice;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -98,10 +98,5 @@ public class MainActivity extends AppCompatActivity {
     public void rollResult(int score) {
         TextView scoreView = (TextView) findViewById(R.id.rollResult);
         scoreView.setText(String.valueOf(score + " !"));
-    }
-
-    public void rollText (String message) {
-        TextView rollView = (TextView) findViewById(R.id.rollText);
-        rollView.setText("yo");
     }
 }
