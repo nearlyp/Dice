@@ -16,4 +16,5 @@
     <string name="d2">d2</string>
     <string name="reset">Reset</string>
     <string name="rollText">You rolled</string>
+    <string name="easterToast">Un coup de dés jamais n’abolira le hasard</string>
 </resources>

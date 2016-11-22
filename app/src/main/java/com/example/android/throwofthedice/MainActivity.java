@@ -5,10 +5,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import java.util.concurrent.ThreadLocalRandom;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     int diceRoll = 0;
+    int easter = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +67,11 @@ public class MainActivity extends AppCompatActivity {
      */
     public void resetButton(View view) {
         diceRoll = 0;
+        easter ++;
+        if (easter == 5) {
+            Toast.makeText(this, getString(R.string.easterToast), Toast.LENGTH_LONG).show();
+            easter = 0;
+        }
         rollResult(diceRoll);
     }
 
