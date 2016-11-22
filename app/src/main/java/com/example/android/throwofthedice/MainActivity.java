@@ -17,24 +17,9 @@ public class MainActivity extends AppCompatActivity {
         rollResult(0);
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.menu_main, menu);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        int id = item.getItemId();
-//
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
-//
-//    return super.onOptionsItemSelected(item);
-//    }
-
-
+    /**
+     * Onclick handlers to update the view for particular values.
+     */
     public void rolld2(View view) {
         diceRoll = ThreadLocalRandom.current().nextInt(1, 2 + 1);
         rollResult(diceRoll);
@@ -45,15 +30,10 @@ public class MainActivity extends AppCompatActivity {
         rollResult(diceRoll);
     }
 
-
     public void rolld6(View view) {
         diceRoll = ThreadLocalRandom.current().nextInt(1, 6 + 1);
         rollResult(diceRoll);
     }
-
-
-
-
 
     public void rolld8(View view) {
         diceRoll = ThreadLocalRandom.current().nextInt(1, 8 + 1);
@@ -80,17 +60,14 @@ public class MainActivity extends AppCompatActivity {
         rollResult(diceRoll);
     }
 
+    /**
+     * Resets the view for rollResult to 0. Seems unnecessary but not worth removing.
+     */
     public void resetButton(View view) {
         diceRoll = 0;
         rollResult(diceRoll);
     }
 
-
-//    private void display(int number) {
-//        TextView quantityTextView = (TextView) findViewById(
-//                R.id.quantity_text_view);
-//        quantityTextView.setText("" + number);
-//    }
 
     /**
      * Displays the given result for roll.
