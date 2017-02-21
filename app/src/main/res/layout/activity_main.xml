@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:baselineAligned="false">
+    android:baselineAligned="false"
+    android:background="#fff3e0">
 
     <LinearLayout
         android:orientation="vertical"
@@ -33,16 +34,6 @@
                     android:text="@string/d2" />
 
                 <Button
-                    android:id="@+id/button2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:layout_marginTop="8dp"
-                    android:onClick="rolld4"
-                    android:text="@string/d4" />
-
-                <Button
                     android:id="@+id/button3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -53,14 +44,24 @@
                     android:text="@string/d6" />
 
                 <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/button5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:layout_marginTop="8dp"
-                    android:onClick="rolld8"
-                    android:text="@string/d8" />
+                    android:onClick="rolld10"
+                    android:text="@string/d10" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="8dp"
+                    android:onClick="rolld20"
+                    android:text="@string/d20" />
 
             </LinearLayout>
 
@@ -72,14 +73,24 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/button5"
+                    android:id="@+id/button2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:layout_marginTop="24dp"
-                    android:onClick="rolld10"
-                    android:text="@string/d10" />
+                    android:onClick="rolld4"
+                    android:text="@string/d4" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="8dp"
+                    android:onClick="rolld8"
+                    android:text="@string/d8" />
 
                 <Button
                     android:id="@+id/button6"
@@ -90,16 +101,6 @@
                     android:layout_marginTop="8dp"
                     android:onClick="rolld12"
                     android:text="@string/d12" />
-
-                <Button
-                    android:id="@+id/button7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:layout_marginTop="8dp"
-                    android:onClick="rolld20"
-                    android:text="@string/d20" />
 
                 <Button
                     android:id="@+id/button8"
